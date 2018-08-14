@@ -1,0 +1,72 @@
+td, tr{		/*УБИРАЮ ОТСТУПЫ У ЭЛЕМЕНТОВ ТАБЛИЦЫ*/
+	padding: 0;
+}
+/*МЕНЯЮ ЦВЕТ 'PLACEHOLDER'*/
+input::-moz-placeholder { color: #80b51c; } 	/*ДЛЯ 'FIREFOX'*/
+input::-webkit-input-placeholder { color: #80b51c; } 	/*ДЛЯ 'CHROME' И 'SAFARI'*/
+
+:active, :hover, :focus {	/*УБИРАЮ ОБВОДКУ У ВСЕХ ЭЛЕМЕНТОВ*/
+    outline: 0;
+    outline-offset: 0;
+}
+
+
+html{
+	font-family: sans-serif;
+	font-size: 10px;
+}
+
+body{
+	background: #000;
+}
+.board{
+	position: relative;
+	margin: auto;
+	background: url(../Images/board.jpg) no-repeat center center;
+	width: 1048px;
+	height: 861px;
+}
+
+.board__table{
+	border-spacing: 0px;
+	position: absolute;
+	left: 185px;
+	top: 98px;
+}
+.board__table td{
+	width: 96px;
+	height: 96px;
+}
+
+.board__form{
+	font-family: 'Ubuntu', sans-serif;
+	color: green;
+	position: absolute;
+	right: 11px;
+	bottom: 88px;
+	border: 3px solid #D3D3D3;
+}
+#guessInput{
+	text-align: center;
+	font-size: 3.5em;
+	width: 60px;
+	height: 49px;
+	color: #80b51c;
+	background: #000;
+	border: none;
+}
+#fireButton{
+	text-align: center;
+	font-size: 3.5em;
+	width: 90px;
+	height: 55px;
+	cursor: pointer;
+	background: red;
+}
+
+.hit{
+	background: url(../Images/ship.png) no-repeat center center;
+}
+.miss{
+	background: url(../Images/miss.png) no-repeat center center;
+}
